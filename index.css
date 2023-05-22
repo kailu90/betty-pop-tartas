@@ -1,0 +1,164 @@
+:root {
+  --primary-color:#4E2803;
+  --secondary-color: #BC1111;
+  --third-color: #FFFFFF;
+  --fourth-color: #000000;
+  --font-small: 1.6rem;
+  --font-medium: 2rem;
+  --font-large: 3rem;
+  --font-XXlarge: 5rem;
+  --font-family: ;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+  color: var(--fourth-color);
+}
+.container_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: var(--font-small);
+  height: 100px;
+  width: 100%;
+  padding: 0 200px;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 400;
+  position: fixed;
+  background-color: var(--third-color);
+}
+.container_header a:hover {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+.logo_betty_pop_tartas {
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+}
+.container_header li {
+  list-style: none;
+}
+.container_header li i{
+  padding: 0 10px;
+}
+.container_redes a {
+  padding: 0 10px;
+}
+.container_redes .icono_instagram {
+  width: 20px;
+  height: 20px;
+}
+.container_redes .icono_whatsapp {
+  width: 20px;
+  height: 20px;
+}
+.carrito_compras {
+  width: 20px;
+  height: 20px;
+}
+
+
+
+.container_main {
+  
+}
+.container_main section {
+ 
+}
+.container_main .section_hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 800px;
+  color: var(--third-color);
+  background-color: #FBF6F2;
+  background-image: url("./images/Prueba_fondo_1.jpg");
+  background-attachment: fixed;
+}
+.titulo_hero_container {
+  width: 700px;
+}
+.container_main .section_hero h1 {
+  font-size: 7rem;
+  margin-top: 80px;
+  height: max-content;
+  font-family:'Pacifico', cursive;
+  color: var(--secondary-color);
+}
+.container_main .section_hero h2 {
+  font-size: 4rem;
+  height: max-content;
+  font-family: 'Poppins', sans-serif;
+}
+.container_main .section_hero p {
+  font-size: var(--font-medium);
+  font-family: 'Poppins', sans-serif;
+}
+.section_hero button {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background-color: transparent;
+  color: var(--third-color);
+  font-size: var(--font-medium);
+}
+.section_hero button:hover {
+  border-color: var(--third-color);
+}
+
+
+
+.container_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: var(--third-color);
+  font-size: var(--font-small);
+  background-color: var(--fourth-color);
+  height: 700px;
+  align-items: center;
+  padding: 0 200px;
+  padding-bottom: 20px;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.container_footer h2 {
+  font-size: var(--font-large);
+  margin-top: 150px;
+}
+.container_footer p {
+  margin-top: 80px;
+}
+.container_footer button {
+  width: 100px;
+  height: 40px;
+  margin-top: 60px;
+  border-radius: 10px;
+}
+.container_footer p:nth-child(4){
+  margin-top: 60px;
+}
+.container_redes_sociales{
+  margin-top: 60px;
+}
+.container_redes_sociales a {
+  padding: 0 10px;
+}
+.container_footer img {
+  width: 30px;
+  height: 30px;
+}
