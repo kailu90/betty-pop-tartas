@@ -1,5 +1,5 @@
 :root {
-  --primary-color:#4E2803;
+  --primary-color: #4E2803;
   --secondary-color: #BC1111;
   --third-color: #FFFFFF;
   --fourth-color: #000000;
@@ -9,102 +9,152 @@
   --font-XXlarge: 5rem;
   --font-family: ;
 }
-* {
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
+
 a {
   text-decoration: none;
   color: var(--fourth-color);
 }
-.container_header {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: var(--font-small);
-  height: 100px;
+
+/* menu mobile */
+/* .header {
+  position: absolute;
   width: 100%;
-  padding: 0 200px;
-  font-family:'Open Sans', sans-serif;
-  font-weight: 400;
-  position: fixed;
-  background-color: var(--third-color);
-}
-.container_header a:hover {
-  color: var(--primary-color);
-  font-weight: 600;
-}
-.logo_betty_pop_tartas {
-  width: 80px;
-  height: 80px;
-  background-size: cover;
-  background-position: center;
-}
-.container_header li {
-  list-style: none;
-}
-.container_header li i{
-  padding: 0 10px;
-}
-.container_redes a {
-  padding: 0 10px;
-}
-.container_redes .icono_instagram {
-  width: 20px;
-  height: 20px;
-}
-.container_redes .icono_whatsapp {
-  width: 20px;
-  height: 20px;
-}
-.carrito_compras {
-  width: 20px;
-  height: 20px;
+  height: 100vh;
+  padding: 16px;
+  background-color: rgb(36, 31, 32);
 }
 
-
-
-.container_main {
-  
+header nav {
+  height: 50%;
+  border-top: 1px solid #41403d;
+  border-bottom: 1px solid #41403d;
 }
-.container_main section {
- 
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-.container_main .section_hero {
+
+header div a img {
+  width: 20px;
+  height: 20px;
+} */
+
+@media (min-width: 425px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--font-small);
+    height: 100px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    position: fixed;
+    background-color: var(--third-color);
+  }
+
+  .header__nav {
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+
+  .header__nav .nav__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header__logo {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header a:hover {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+
+  .header li {
+    list-style: none;
+  }
+
+  .header li a {
+    padding: 0 10px;
+  }
+
+  .header__redes .icono_instagram {
+    width: 20px;
+    height: 20px;
+  }
+
+  .header__redes .icono_whatsapp {
+    width: 20px;
+    height: 20px;
+  }
+
+  .carrito_compras {
+    width: 20px;
+    height: 20px;
+  }
+
+}
+
+.main {
+  height: auto;
+}
+
+.main .section-hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 800px;
+  height: 500px;
   color: var(--third-color);
   background-color: #FBF6F2;
   background-image: url("./images/Prueba_fondo_1.jpg");
   background-attachment: fixed;
 }
-.titulo_hero_container {
-  width: 700px;
+
+.titulo-hero-container {
+  width: auto;
 }
-.container_main .section_hero h1 {
-  font-size: 7rem;
+
+.main .section-hero h1 {
+  font-size: 5rem;
   margin-top: 80px;
   height: max-content;
-  font-family:'Pacifico', cursive;
+  font-family: 'Pacifico', cursive;
   color: var(--secondary-color);
 }
-.container_main .section_hero h2 {
+
+.main .section_hero h2 {
   font-size: 4rem;
   height: max-content;
   font-family: 'Poppins', sans-serif;
 }
-.container_main .section_hero p {
+
+.main .section_hero p {
   font-size: var(--font-medium);
   font-family: 'Poppins', sans-serif;
 }
+
 .section_hero button {
   width: 100px;
   height: 40px;
@@ -115,13 +165,31 @@ a {
   color: var(--third-color);
   font-size: var(--font-medium);
 }
+
 .section_hero button:hover {
   border-color: var(--third-color);
 }
 
+/* bullets carousel */
+.bullets-container {
+  display: flex;
+  height: 70px;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  top: 50%;
+  right: 60px;
+}
 
+.bullets-container a {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: transparent;
+}
 
-.container_footer {
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,34 +199,41 @@ a {
   background-color: var(--fourth-color);
   height: 700px;
   align-items: center;
-  padding: 0 200px;
+  padding: 0 20px;
   padding-bottom: 20px;
-  font-family:'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
-.container_footer h2 {
+
+.footer h2 {
   font-size: var(--font-large);
   margin-top: 150px;
 }
-.container_footer p {
+
+.footer p {
   margin-top: 80px;
 }
-.container_footer button {
+
+.footer button {
   width: 100px;
   height: 40px;
-  margin-top: 60px;
+  margin-top: 30px;
   border-radius: 10px;
 }
-.container_footer p:nth-child(4){
-  margin-top: 60px;
+
+.footer p:nth-child(4) {
+  margin-top: 30px;
 }
-.container_redes_sociales{
-  margin-top: 60px;
+
+.footer__redes {
+  margin-top: 30px;
 }
-.container_redes_sociales a {
+
+.footer__redes a {
   padding: 0 10px;
 }
-.container_footer img {
+
+.footer img {
   width: 30px;
   height: 30px;
 }
