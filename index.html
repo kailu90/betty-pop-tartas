@@ -14,51 +14,68 @@
   <title>Betty Pop Tartas</title>
 </head>
 <body>
-  <header class="container_header">
-    <img class="logo_betty_pop_tartas" src="./assets/Logo-betty-poo_r.jpeg" alt="logo Betty Pop Tartas">
-    <nav class="container_lista_navegacion">
-      <ul>
-        <li>
-          <i><a href="">Inicio</a></i>
-          <i><a href="">Historia</a></i>
-          <i><a href="">Nuestras Delicias</a></i>
-          <i><a href="">Menu</a></i>
-          <i><a href="">Clientes Felices</a></i>
-          <i><a href="">Blog</a></i>
-          <i><a href="">Contáctanos</a></i>
+  <header class="header">
+    <img class="header__logo" src="./assets/Logo-betty-poo_r.jpeg" alt="logo Betty Pop Tartas">
+    <nav class="header__nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="">Inicio</a>
+        </li>
+        <li class="nav__item">
+          <a href="">Historia</a>
+        </li>
+        <li class="nav__item">
+          <a href="">Nuestras Delicias</a>
+        </li>
+        <li class="nav__item">
+          <a href="">Menu</a>
+        </li>
+        <li class="nav__item">
+          <a href="">Clientes Felices</a>
+        </li>
+        <li class="nav__item">
+          <a href="">Blog</a>
+        </li>
+        <li class="nav__item">
+          <a href="">Contáctanos</a>
         </li>
       </ul>
     </nav>
-    <div class="container_redes">
+
+    <div class="header__redes">
       <a href=""><img class="icono_instagram" src="./assets/icono-instagram.png" alt="icono instagram"></a>
       <a href=""><img class="icono_whatsapp" src="./assets/icono-whatsapp.png" alt="icono whatsapp"></a>
     </div>
     <a href=""><img class="carrito_compras" src="./assets/icono_carrito_compras.png" alt="carrito de compras"></a>
   </header>
-  <main class="container_main">
-    <section class="section_hero" >
-      <div class="titulo_hero_container">
+  <main class="main">
+    <section class="section-hero" id="hero">
+      <div class="titulo-hero-container">
         <h1>Las hacemos con los mismos ingredientes que todos....</h1>
         <h2>pero nos quedan como a nadie!</h2>
         <p>REPOSTERIA ARTESANAL</p>
         <button>pedidos</button>
       </div>
-      
     </section>
-    <section class="section_historia" >
+    <section class="section_historia" id="historia">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, similique? Velit laudantium beatae possimus harum mollitia, corrupti ipsum voluptate ratione deleniti, rerum tenetur obcaecati nobis totam itaque, nesciunt dolore eligendi.</p>
     </section>
-    <section class="section_productos" >
+    <section class="section_productos" id="productos">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, similique? Velit laudantium beatae possimus harum mollitia, corrupti ipsum voluptate ratione deleniti, rerum tenetur obcaecati nobis totam itaque, nesciunt dolore eligendi.</p>
     </section>
+    <div class="bullets-container">
+      <a id="firstBullet" class="bullet" href="#hero"></a>
+      <a id="secondBullet" class="bullet" href="#historia"></a>
+      <a id="thirdBullet" class="bullet" href="#productos"></a>
+    </div>
   </main>
-  <footer class="container_footer">
+  <footer class="footer">
     <h2>Betty Pop Tartas</h2>
     <p>Somos una repostería artesanal, ubicados en la ciudad de Pereira. Horneamos con amor
       con amor para que tengas el mejor producto en tu mesa</p>
     <button>Haz tu pedido</button>
     <p>WHATSAPP: (+57) 304 6392566</p>
-    <div class="container_redes_sociales" >
+    <div class="footer__redes">
       <a href="https://www.instagram.com/bettypoptartas/"><img src="./assets/instagram_color.png" alt="icono instagram"></a>
       <a href=""><img src="./assets/whatsapp_color.png" alt="icono whatsapp"></a>
     </div>
