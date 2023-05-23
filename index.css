@@ -28,18 +28,27 @@ a {
 }
 
 /* menu mobile */
-/* .header {
-  position: absolute;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
   width: 100%;
-  height: 100vh;
-  padding: 16px;
-  background-color: rgb(36, 31, 32);
+  height: 140px;
+  padding: 5px 20px;
+  background-color: var(--third-color);
+}
+
+.header__logo {
+  width: 100px;
+  height: 100px;
 }
 
 header nav {
   height: 50%;
   border-top: 1px solid #41403d;
   border-bottom: 1px solid #41403d;
+  display: none;
 }
 
 header nav ul {
@@ -51,7 +60,28 @@ header nav ul {
 header div a img {
   width: 20px;
   height: 20px;
-} */
+}
+
+.header__redes {
+  display: none;
+}
+
+.header .header__cart {
+ justify-self: center;
+ }
+
+.header .header__cart img {
+  width: 20px;
+  height: 20px;
+}
+
+main {
+  
+}
+
+.main .titulo-hero-container {
+  padding-top: 80px;
+}
 
 @media (min-width: 425px) {
   .header {
@@ -64,7 +94,7 @@ header div a img {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     position: fixed;
-    background-color: var(--third-color);
+    background-color: transparent;
   }
 
   .header__nav {
@@ -128,8 +158,9 @@ header div a img {
   height: 500px;
   color: var(--third-color);
   background-color: #FBF6F2;
-  background-image: url("./images/Prueba_fondo_1.jpg");
+  background-image: url("./images/Prueba_fondo_50.jpg");
   background-attachment: fixed;
+  background-position: center center;
 }
 
 .titulo-hero-container {
@@ -137,7 +168,7 @@ header div a img {
 }
 
 .main .section-hero h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   margin-top: 80px;
   height: max-content;
   font-family: 'Pacifico', cursive;
@@ -153,6 +184,7 @@ header div a img {
 .main .section_hero p {
   font-size: var(--font-medium);
   font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
 }
 
 .section_hero button {
