@@ -97,7 +97,6 @@ a {
   color: var(--third-color);
   background-color:var(--third-color);
   background-image: url("./images/Prueba_fondo_1.jpg");
-  background-attachment: fixed;
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -273,7 +272,7 @@ a {
 
 /***************************** Inicio de Vista Desktop*****************/
 
-@media (min-width: 425px) {
+@media (min-width: 900px) {
   .header {
     display: flex;
     align-items: center;
