@@ -44,6 +44,165 @@ a {
   height: 100px;
 }
 
+.burger-menu-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+#burgerIcon {
+  width: 30px;
+  height: 16px;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+
+.line {
+  height: 2px;
+  width: 30px;
+  background-color: white;
+  position: absolute;
+  transition: transform 1s ease;
+}
+
+.line:nth-child(1) {
+  top: 0;
+}
+
+.line:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.line:nth-child(3) {
+ bottom: 0;
+}
+
+#burgerIcon.active .line:nth-child(1) {
+  transform: translateY(4px) rotate(45deg);
+}
+
+#burgerIcon.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+#burgerIcon.active .line:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+#burgerIcon.active {
+  transform: translateX(250px);
+}
+
+.burger-menu-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+#burgerIcon {
+  width: 30px;
+  height: 16px;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+
+.line {
+  height: 2px;
+  width: 30px;
+  background-color: white;
+  position: absolute;
+  transition: transform 1s ease;
+}
+
+.line:nth-child(1) {
+  top: 0;
+}
+
+.line:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.line:nth-child(3) {
+ bottom: 0;
+}
+
+#burgerIcon.active .line:nth-child(1) {
+  transform: translateY(4px) rotate(45deg);
+}
+
+#burgerIcon.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+#burgerIcon.active .line:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+#burgerIcon.active {
+  transform: translateX(250px);
+}
+
+.burger-menu-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+#burgerIcon {
+  width: 30px;
+  height: 16px;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+
+.line {
+  height: 2px;
+  width: 30px;
+  background-color: white;
+  position: absolute;
+  transition: transform 1s ease;
+}
+
+.line:nth-child(1) {
+  top: 0;
+}
+
+.line:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.line:nth-child(3) {
+ bottom: 0;
+}
+
+#burgerIcon.active .line:nth-child(1) {
+  transform: translateY(4px) rotate(45deg);
+}
+
+#burgerIcon.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+#burgerIcon.active .line:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+#burgerIcon.active {
+  transform: translateX(250px);
+}
+
 header nav {
   height: 50%;
   border-top: 1px solid #41403d;
@@ -62,6 +221,14 @@ header div a img {
   height: 20px;
 }
 
+.header__logo {
+  display: none;
+}
+
+.header__cart {
+  display: none;
+}
+
 .header__redes {
   display: none;
 }
@@ -73,6 +240,73 @@ header div a img {
 .header .header__cart img {
   width: 20px;
   height: 20px;
+}
+
+
+.main .titulo-hero-container {
+  padding-top: 80px;
+}
+
+@media (min-width: 425px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--font-small);
+    height: 100px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    position: fixed;
+    background-color: transparent;
+  }
+
+  .header__nav {
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+
+  .header__nav .nav__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header__logo {
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header a:hover {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+
+  .header li {
+    list-style: none;
+  }
+
+  .header li a {
+    padding: 0 10px;
+  }
+
+  .header__redes .icono_instagram {
+    width: 20px;
+    height: 20px;
+  }
+
+  .header__redes .icono_whatsapp {
+    width: 20px;
+    height: 20px;
+  }
+
+  .carrito_compras {
+    width: 20px;
+    height: 20px;
+  }
+
 }
 
 .main {
@@ -226,7 +460,7 @@ header div a img {
 
 /* bullets carousel */
 .bullets-container {
-  display: flex;
+  display: none;
   height: 70px;
   flex-direction: column;
   justify-content: space-between;
