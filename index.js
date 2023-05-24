@@ -8,6 +8,7 @@ burgerIcon.addEventListener('click', () => {
   burgerIcon.classList.toggle('active');
   header.classList.toggle('translate');
 
+  nav.classList.remove('inactive');
   // if (burgerIcon.classList.contains('active')) {
    
   //   // line1.style.transform = 'none';

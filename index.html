@@ -17,9 +17,44 @@
 <body>
   
   <header class="header">
-
-    <img class="header__logo" src="./assets/Logo-betty-poo_r.jpeg" alt="logo Betty Pop Tartas">
-    <nav class="header__nav"  id="nav">
+    <nav class="nav-molibe inactive">
+      <ul class="nav-molibe__list">
+        <li class="nav-molibe__item">
+          <a href="">Inicio</a>
+        </li>
+        <li class="nav-molibe__item">
+          <a href="">Historia</a>
+        </li>
+        <li class="nav-molibe__item">
+          <a href="">Nuestras Delicias</a>
+        </li>
+        <li class="nav-molibe__item">
+          <a href="">Menu</a>
+        </li>
+        <li class="nav-molibe__item">
+          <a href="">Clientes Felices</a>
+        </li>
+        <li class="nav-molibe__item">
+          <a href="">Blog</a>
+        </li>
+        <li class="nav-molibe__item">
+          <a href="">Contáctanos</a>
+        </li>
+      </ul>
+      <ul class="nav__redes">
+        <a href=""><img class="icono_instagram" src="./assets/icono-instagram.png" alt="icono instagram"></a>
+        <a href=""><img class="icono_whatsapp" src="./assets/icono-whatsapp.png" alt="icono whatsapp"></a>
+      </ul>
+    </nav>
+    <div class="burger-menu-container">
+      <div class="burger-menu" id="burgerIcon">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+    <img class="header__logo" src="./assets/Logo-betty-poo_redondo" alt="logo Betty Pop Tartas">
+    <nav class="header__nav inactive">
       <ul class="nav__list">
         <li class="nav__item">
           <a href="">Inicio</a>
@@ -44,31 +79,33 @@
         </li>
       </ul>
     </nav>
-
-    <div class="header__redes">
+    <div class="header_redes inactive">
       <a href=""><img class="icono_instagram" src="./assets/icono-instagram.png" alt="icono instagram"></a>
       <a href=""><img class="icono_whatsapp" src="./assets/icono-whatsapp.png" alt="icono whatsapp"></a>
     </div>
-    <a class="header__cart" href=""><img src="./assets/icono_carrito_compras.png" alt="carrito de compras"></a>
+    <a class="header__cart" href=""><img src="./assets/icono_carrito_compras_blanco.png" alt="carrito de compras"></a>
   </header>
-  <div class="burger-menu-container">
-    <div class="burger-menu" id="burgerIcon">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </div>
-  </div>
+ 
+  
   <main class="main">
     <section class="section-hero" id="hero">
       <div class="titulo-hero-container">
-        <h1>Las hacemos con los mismos ingredientes que todos....</h1>
-        <h2>pero nos quedan como a nadie!</h2>
+        <h1>EN BETTY POP HACEMOS TORTAS EN SERIO</h1>
+        <h2>NO EN SERIE.</h2>
         <p>REPOSTERIA ARTESANAL</p>
-        <button>pedidos</button>
+        <a href="">PEDIDOS</a>
       </div>
     </section>
     <section class="section_historia" id="historia">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, similique? Velit laudantium beatae possimus harum mollitia, corrupti ipsum voluptate ratione deleniti, rerum tenetur obcaecati nobis totam itaque, nesciunt dolore eligendi.</p>
+      <div class="historia__parrafo">
+        <h2 class="historia__titulo">Dejame Contarte sobre mí....</h2>  
+        <p>Soy una emprendedora de la ciudad de Pereira, donde busco en cada producto
+        entregar toda mi inspiración y cada persona se sienta más que satisfecha, 
+        soy una fiel creyente que atraves del amor podemos cambiar al mundo, contamos
+        con una gran variedad de tortas artesanales, Betty Pop Tartas nace producto 
+        de un sueño que día a día y gracias a ustedes continua haciendose realidad.</p>
+      </div>
+      <img src="./images/imagen_historia.jpg" alt="imagen emprendora">
     </section>
     <section class="section_productos" id="productos">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, similique? Velit laudantium beatae possimus harum mollitia, corrupti ipsum voluptate ratione deleniti, rerum tenetur obcaecati nobis totam itaque, nesciunt dolore eligendi.</p>
@@ -81,9 +118,9 @@
   </main>
   <footer class="footer">
     <h2>Betty Pop Tartas</h2>
-    <p>Somos una repostería artesanal, ubicados en la ciudad de Pereira. Horneamos con amor
-      con amor para que tengas el mejor producto en tu mesa</p>
-    <button>Haz tu pedido</button>
+    <p>Somos una repostería artesanal, ubicados en la ciudad de Pereira.
+       Horneamos con mucho amor para que tengas el mejor producto en tu mesa</p>
+    <a>Haz tu pedido</a>
     <p>WHATSAPP: (+57) 304 6392566</p>
     <div class="footer__redes">
       <a href="https://www.instagram.com/bettypoptartas/"><img src="./assets/instagram_color.png" alt="icono instagram"></a>
