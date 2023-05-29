@@ -197,45 +197,6 @@ header div a img {
   background-color:var(--third-color);
 }
 
-.main .section-hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 100vh;
-  color: var(--third-color);
-  background-image: url("./images/Prueba_fondo_1.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
-.main .titulo-hero-container {
-  width: auto;
-  padding-top: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 80px;
-}
-
-.main .section-hero h1 {
-  font-size: 5rem;
-  margin-top: 80px;
-  height: max-content;
-  font-family: 'Pacifico', cursive;
-  font-weight: 400;
-  color: var(--secondary-color);
-}
-
-.main .section_hero h2 {
-  font-size:var(--font-large);
-  height: max-content;
-  margin-top: 20px;
-  padding-bottom: 20px;
-}
-
 .main h3 {
   font-size: var(--font-large);
   color: var(--fourth-color);
@@ -250,31 +211,113 @@ header div a img {
   font-family: 'Pacifico', cursive;  
 }
 
-.main p {
-  color: var(--text-color);
-  font-size: var(--font-small);
-  width: 90%;
-  margin: 0 auto;
+.main .section-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: var(--third-color);
+  background-image: url("./images/Prueba_fondo_1.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 
-.main .section_hero p {
-  font-size: var(--font-large);
-  margin-top: 10px;
+.main .titulo-hero-container {
+  width: auto;
+  text-align: center;
+}
+
+.main .section-hero h1 {
+  font-size: 50px;
+  line-height: 60px;
+  height: max-content;
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  color: var(--secondary-color);
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.main .section-hero .title-animation {
+  opacity: 100%;
+  transform: translateY(0);
+  transition: opacity, transform 1s;
+}
+
+.main .section-hero h2 {
+  font-size: 37px;
+  height: max-content;
+  font-family: 'Poppins', sans-serif;
+  transform: translateY(-144px);
+  opacity: 0;
+}
+
+.main .section-hero .subtitle-animation {
+  opacity: 100%;
+  font-size: 35px;
+  transform: translateY(0);
+  transition: opacity, transform, font-size 0.2s;
+}
+
+.hero-lines-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero-line {
+  display: inline-block;
+  height: 2px;
+  width: 1px;
+  background-color: var(--third-color);
+}
+
+.hero-lines-container .line-left-on-load {
+  transform: scaleX(150);
+  transform-origin: right;
+  transition: transform 2s;
+}
+
+.hero-lines-container .line-right-on-load {
+  transform: scaleX(150);
+  transform-origin: left;
+  transition: transform 2s;
+}
+
+.main .section-hero .hero-second-subtitle {
+  font-size: var(--font-medium);
+  font-family: 'Poppins', sans-serif;
+  opacity: 0;
+  transform: translateY(-26px);
+  transition: opacity, transform 2s;
+}
+
+.main .section-hero .titulo-hero-container .second-subtitle-animation {
+  opacity: 100%;
+  transform: translateY(0);
 }
 
 .main .section-hero .titulo-hero-container a {
+  margin: 8px auto 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 70px;
+  padding: 4px;
+  width: 80px;
   height: 24px;
-  margin-top: 20px;
-  border: 1px solid var(--fourth-color);
   border-radius: 5px;
-  background-color: transparent;
-  color: var(--third-color);
-  font-size: var(--font-small);
-  font-weight: 100;
+  background-color: var(--third-color);
+  color: var(--fourth-color);
+  font-weight: 300;
+  font-size: 12px;
+  opacity: 0;
+  transform: translateY(-26px);
+  transition: opacity, transform 2s;
+}
+
+.main .section-hero .titulo-hero-container .hero-btn--animation {
+  opacity: 100%;
+  transform: translateY(0);
 }
 
 .main .section-hero .titulo-hero-container a:hover {
@@ -282,7 +325,7 @@ header div a img {
   border: 1px solid var(--secondary-color);
 }
 
-/*Inicio sección historia*/
+/****************************** Inicio sección historia *****************************/
 
 .section_historia {
   display: flex;
