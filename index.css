@@ -268,17 +268,17 @@ header div a img {
   background-color: var(--third-color);
 }
 
-.section_historia .historia__parrafo {
+.section_historia .historia__description {
   text-align: center;
 }
 
-.section_historia .historia__parrafo h2 {
+.section_historia .historia__description h2 {
   font-size: 3.4rem;
   font-weight: 600;
   margin: 40px 0;
 }
 
-.section_historia .historia__parrafo p {
+.section_historia .historia__description p {
   font-size: var(--font-small);
   margin: 40px 0;
 }
@@ -287,9 +287,45 @@ header div a img {
   
 }
 
-/*Inicio seccion productos*/
+/*Inicio sección productos*/
 
+.section_productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: max-content;
+  color: var(--third-color);
+  padding: 20px 0;
+  background-color: var(--third-color);
+}
 
+.section_productos img {
+  width: 100%;
+}
+
+.main__title {
+  position: relative;
+}
+
+.main__title .main__background_title {
+  position: absolute;
+  top: 40px;
+  color: var(--third-color);
+  font-size: var(--font-XXlarge);
+}
+
+.section_productos .main__productos {
+  margin-top: 40px;
+}
+
+.section_productos .main__productos img {
+  border-radius: 10px;
+
+  width: 130px;
+  height: 130px;
+}
 
 /* bullets carousel */
 .bullets-container {
@@ -330,7 +366,7 @@ header div a img {
 
 .footer h2 {
   font-size: var(--font-large);
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .footer p {
