@@ -163,17 +163,17 @@ a {
   background-color: var(--third-color);
 }
 
-.section_historia .historia__parrafo {
+.section_historia .historia__description {
   text-align: center;
 }
 
-.section_historia .historia__parrafo h2 {
+.section_historia .historia__description h2 {
   font-size: 3.4rem;
   font-weight: 600;
   margin: 40px 0;
 }
 
-.section_historia .historia__parrafo p {
+.section_historia .historia__description p {
   font-size: var(--font-small);
   margin: 40px 0;
 }
@@ -192,35 +192,30 @@ a {
   text-align: center;
   height: max-content;
   color: var(--third-color);
-  padding: 20px;
+  padding: 20px 0;
   background-color: var(--third-color);
 }
 
-.section_productos .titulo__tortas {
+.section_productos img {
+  width: 100%;
+}
+
+.main__title {
+  position: relative;
+}
+
+.main__title .main__background_title {
+  position: absolute;
+  top: 40px;
   color: var(--third-color);
   font-size: var(--font-XXlarge);
-  position: absolute;
-  top: 1670px;
 }
 
-.section_productos .titulo__cupcakes{
-  color: var(--third-color);
-  font-size: var(--font-XXlarge);
-  position: absolute;
-  top: 2500px;
-}
-
-.section_productos p {
-font-size: var(--font-medium);
-margin: 40px 0;
-color: var(--fourth-color);
-}
-
-.section_productos .productos__carrusel {
+.section_productos .main__productos {
   margin-top: 40px;
 }
 
-.section_productos .productos__carrusel img {
+.section_productos .main__productos img {
   border-radius: 10px;
 
   width: 130px;
