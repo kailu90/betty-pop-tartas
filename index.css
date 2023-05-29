@@ -182,9 +182,50 @@ a {
   
 }
 
-/*Inicio seccion productos*/
+/*Inicio sección productos*/
 
+.section_productos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: max-content;
+  color: var(--third-color);
+  padding: 20px;
+  background-color: var(--third-color);
+}
 
+.section_productos .titulo__tortas {
+  color: var(--third-color);
+  font-size: var(--font-XXlarge);
+  position: absolute;
+  top: 1670px;
+}
+
+.section_productos .titulo__cupcakes{
+  color: var(--third-color);
+  font-size: var(--font-XXlarge);
+  position: absolute;
+  top: 2500px;
+}
+
+.section_productos p {
+font-size: var(--font-medium);
+margin: 40px 0;
+color: var(--fourth-color);
+}
+
+.section_productos .productos__carrusel {
+  margin-top: 40px;
+}
+
+.section_productos .productos__carrusel img {
+  border-radius: 10px;
+
+  width: 130px;
+  height: 130px;
+}
 
 /* bullets carousel */
 .bullets-container {
@@ -226,7 +267,7 @@ a {
 
 .footer h2 {
   font-size: var(--font-large);
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .footer p {
