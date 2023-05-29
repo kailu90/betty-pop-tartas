@@ -225,6 +225,7 @@ header div a img {
   margin-top: 80px;
   height: max-content;
   font-family: 'Pacifico', cursive;
+  font-weight: 400;
   color: var(--secondary-color);
 }
 
@@ -287,10 +288,6 @@ header div a img {
   margin: 40px 0;
 }
 
-.section_historia img {
-  
-}
-
 /*Inicio sección productos*/
 
 .section_productos {
@@ -300,36 +297,81 @@ header div a img {
   align-items: center;
   text-align: center;
   height: max-content;
-  color: var(--third-color);
   padding: 20px 0;
   background-color: var(--third-color);
 }
 
-.section_productos img {
+.section_productos .tortas_container {
   width: 100%;
+  height: max-content;
 }
 
-.main__title {
+.tortas_container .main__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/torta_chocolate.jpg");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;  
   position: relative;
 }
 
-.main__title .main__background_title {
-  position: absolute;
-  top: 40px;
+.main__background_title {
+  text-align: center;
   color: var(--third-color);
   font-size: var(--font-XXlarge);
+  font-family: 'Poppins', sans-serif;
+  line-height: 4rem;
 }
 
-.section_productos .main__productos {
-  margin-top: 40px;
+.main__background_title span {
+  color: var(--secondary-color);
+  font-size: 7rem;
+  font-family: 'Pacifico', cursive;  
+}
+
+.cupcakes_container .main__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("./images/torta_chocolate.jpg");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;  
+  position: relative;
+}
+
+.section_productos .main__productos  {
+  margin: 60px 0;
+  height: max-content;
+}
+
+.section_productos .main__productos p {
+  width: 80%;
+  height: max-content;
+  font-size: var(--font-medium);
+  color: var(--fourth-color);
+  margin: 0 auto;
 }
 
 .section_productos .main__productos img {
   border-radius: 10px;
-
-  width: 130px;
-  height: 130px;
+  width: 180px;
+  height: 180px;
+  margin: 10px;
+  background-color: var(--fourth-color);
 }
+
+.section_productos .main__productos h3 {
+    color: var(--secondary-color);
+    font-size: var(--font-XXlarge);
+    font-family: 'Poppins', sans-serif;
+  }
 
 /* bullets carousel */
 .bullets-container {
