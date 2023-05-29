@@ -3,6 +3,7 @@
   --secondary-color: #BC1111;
   --third-color: #FBF6F2;
   --fourth-color: #000000;
+  --text-color:#444444;
   --font-small: 1.6rem;
   --font-medium: 2rem;
   --font-large: 3rem;
@@ -19,6 +20,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
 }
 
 li {
@@ -110,7 +112,6 @@ a {
   flex-direction: column;
   justify-self: start;
   position: relative;
-
   cursor: pointer;
   transform: translate(0);
   transition: transform 0.5s;
@@ -160,7 +161,6 @@ a {
   transition: transform 0.3s;
 }
 
-
 .header__logo {
   display: flex;
   width: 100px;
@@ -194,6 +194,7 @@ header div a img {
 
 .main {
   height: auto;
+  background-color:var(--third-color);
 }
 
 .main .section-hero {
@@ -204,7 +205,6 @@ header div a img {
   text-align: center;
   height: 100vh;
   color: var(--third-color);
-  background-color:var(--third-color);
   background-image: url("./images/Prueba_fondo_1.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -221,7 +221,7 @@ header div a img {
 }
 
 .main .section-hero h1 {
-  font-size: var(--font-large);
+  font-size: 5rem;
   margin-top: 80px;
   height: max-content;
   font-family: 'Pacifico', cursive;
@@ -232,14 +232,33 @@ header div a img {
 .main .section_hero h2 {
   font-size:var(--font-large);
   height: max-content;
-  font-family: 'Poppins', sans-serif;
   margin-top: 20px;
   padding-bottom: 20px;
 }
 
+.main h3 {
+  font-size: var(--font-large);
+  color: var(--fourth-color);
+  font-weight: 900;
+  line-height: 4rem;
+}
+
+.main h3 span {
+  line-height: 6rem;
+  font-size: var(--font-XXlarge);
+  color: var(--secondary-color);
+  font-family: 'Pacifico', cursive;  
+}
+
+.main p {
+  color: var(--text-color);
+  font-size: var(--font-small);
+  width: 90%;
+  margin: 0 auto;
+}
+
 .main .section_hero p {
   font-size: var(--font-large);
-  font-family: 'Poppins', sans-serif;
   margin-top: 10px;
 }
 
@@ -267,25 +286,20 @@ header div a img {
 .section_historia {
   display: flex;
   flex-direction: column;
-  padding: 20px;
   height: auto;
-  font-family: 'Open Sans', sans-serif;
   background-color: var(--third-color);
+  margin-bottom: 100px;
+  padding: 0 20px;
 }
 
 .section_historia .historia__description {
   text-align: center;
-}
-
-.section_historia .historia__description h2 {
-  font-size: 3.4rem;
-  font-weight: 600;
-  margin: 40px 0;
+  margin-top: 50px;
 }
 
 .section_historia .historia__description p {
-  font-size: var(--font-small);
-  margin: 40px 0;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /*Inicio sección productos*/
@@ -297,8 +311,8 @@ header div a img {
   align-items: center;
   text-align: center;
   height: max-content;
-  padding: 20px 0;
   background-color: var(--third-color);
+  padding: 0 20px;
 }
 
 .section_productos .tortas_container {
@@ -319,20 +333,6 @@ header div a img {
   position: relative;
 }
 
-.main__background_title {
-  text-align: center;
-  color: var(--third-color);
-  font-size: var(--font-XXlarge);
-  font-family: 'Poppins', sans-serif;
-  line-height: 4rem;
-}
-
-.main__background_title span {
-  color: var(--secondary-color);
-  font-size: 7rem;
-  font-family: 'Pacifico', cursive;  
-}
-
 .cupcakes_container .main__title {
   display: flex;
   align-items: center;
@@ -351,14 +351,6 @@ header div a img {
   height: max-content;
 }
 
-.section_productos .main__productos p {
-  width: 80%;
-  height: max-content;
-  font-size: var(--font-medium);
-  color: var(--fourth-color);
-  margin: 0 auto;
-}
-
 .section_productos .main__productos img {
   border-radius: 10px;
   width: 180px;
@@ -367,11 +359,17 @@ header div a img {
   background-color: var(--fourth-color);
 }
 
-.section_productos .main__productos h3 {
-    color: var(--secondary-color);
-    font-size: var(--font-XXlarge);
-    font-family: 'Poppins', sans-serif;
-  }
+.section_productos .tortas_container .productos__description {
+  margin-bottom: 100px;
+}
+
+.section_productos .tortas_container .productos__description p {
+  margin-top: 30px;
+}
+
+.section_productos .cupcakes_container .main__title h3 {
+  color: var(--third-color);
+}
 
 /* bullets carousel */
 .bullets-container {
@@ -382,6 +380,7 @@ header div a img {
   position: fixed;
   top: 50%;
   right: 60px;
+  padding: 0 20px;
 }
 
 .bullets-container a {
@@ -406,7 +405,6 @@ header div a img {
   align-items: center;
   padding: 0 20px;
   padding-bottom: 20px;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
 
@@ -417,6 +415,7 @@ header div a img {
 
 .footer p {
   margin-top: 80px;
+  font-size: var(--font-small);
 }
 
 .footer a:nth-child(3) {
@@ -466,7 +465,6 @@ header div a img {
     font-size: var(--font-small);
     height: 100px;
     width: 100%;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     position: fixed;
     background-color: transparent;
