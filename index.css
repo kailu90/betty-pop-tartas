@@ -172,6 +172,10 @@ header div a img {
   height: 20px;
 }
 
+.header__nav {
+  display: none;
+}
+
 .header__redes {
   display: none;
 }
