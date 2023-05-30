@@ -345,6 +345,12 @@ header div a img {
   margin-bottom: 50px;
 }
 
+.section_historia img {
+  width: 100vw;
+  max-width: 500px;
+  align-self: center;
+}
+
 /*Inicio sección productos*/
 
 .section_productos {
@@ -366,7 +372,7 @@ header div a img {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("./images/torta_chocolate.jpg");
+  background-image: url("./images/torta-chocolate-prueba_desktop.jpg");
   background-repeat:no-repeat;
   background-position: center;
   background-size: cover;
@@ -387,7 +393,7 @@ header div a img {
   background-repeat:no-repeat;
   background-position: center;
   background-size: cover;
-  width: 100%;
+  width: 100vw;
   height: 50vh;  
   position: relative;
 }
@@ -452,7 +458,11 @@ header div a img {
   text-align: center;
   color: var(--third-color);
   font-size: var(--font-small);
-  background-color: var(--fourth-color);
+  background-color: transparent;
+  background-image: url("./images/background_footer.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   height: 700px;
   align-items: center;
   padding: 0 20px;
@@ -474,20 +484,20 @@ header div a img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
+  width: 150px;
   height: 40px;
   margin-top: 20px;
   border: 1px solid var(--third-color);
   border-radius: 5px;
-  background-color: var(--third-color);
-  color: var(--fourth-color);
+  background-color: var(--text-color);
+  color: var(--third-color);
   font-size: var(--font-small);
+  font-weight: 500;
 }
 
 .footer a:nth-child(3):hover {
-  color: var(--secondary-color);
-  border: 1px solid var(--secondary-color);
-  background-color: transparent;
+  color: var(--fourth-color);
+  border: 1px solid var(--fourth-color);
 }
 
 .footer p:nth-child(4) {
