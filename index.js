@@ -24,7 +24,46 @@ window.onload = function () {
 
 } 
 
+const main = document.getElementById('main');
+const sectionHistoria = document.getElementById('historia');
+
 burgerIcon.addEventListener('click', () => {
     burgerIcon.classList.toggle('active');
     navMobileContainer.classList.toggle('active');
 });
+
+// navMobileContainer.addEventListener('mouseover', () => {
+//     document.body.classList.add('hovered');
+// })
+// navMobileContainer.addEventListener('mouseout', () => {
+//     document.body.classList.remove('hovered');
+// })
+
+
+
+
+window.addEventListener('scroll', function() {
+    // const burgerLine1 = document.getElementById('burgerLine1');
+    // const burgerLine2 = document.getElementById('burgerLine2');
+    // const burgerLine3 = document.getElementById('burgerLine3');
+    // const backgroundColor = window.getComputedStyle(sectionHistoria).backgroundColor;
+    // const backgroundImage = window.getComputedStyle(sectionHistoria).backgroundImage;
+
+    // if (backgroundImage !== 'none') {
+    //     burgerLine1.style.backgroundColor = 'var(--fourth-color)';
+    //     burgerLine2.style.backgroundColor = 'var(--fourth-color)';
+    //     burgerLine3.style.backgroundColor = 'var(--fourth-color)';
+    // } else {
+    //     let rgb = backgroundColor.match(/\d+/g); // Extraer los valores RGB.
+    //     let r = parseInt(rgb[0]);
+    //     let g = parseInt(rgb[1]);
+    //     let b = parseInt(rgb[2]);
+    //     let luminosidad = (r * 0.299 + g * 0.587 + b * 0.114) / 255; //calcular la luminosidad.
+
+    //     if (luminosidad > 0.5) {
+    //         burgerLine1.style.backgroundColor = 'var(--third-color)';
+    //         burgerLine2.style.backgroundColor = 'var(--third-color)';
+    //         burgerLine3.style.backgroundColor = 'var(--third-color)';
+    //     }
+    // }
+})
