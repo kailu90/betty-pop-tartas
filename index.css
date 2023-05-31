@@ -21,12 +21,14 @@
 html {
   font-size: 62.5%;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
+/* 
 body.hovered {
   height: 100%;
   overflow: hidden;
-}
+} */
 
 li {
   list-style: none;
@@ -338,12 +340,36 @@ header div a img {
 /******************************Sección Historia*****************************/
 
 .section_historia {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: auto;
   background-color: var(--third-color);
   margin-bottom: 100px;
 }
+/***************************** arrow down ******************/
+.section_historia .icon-arrow {
+  position: absolute;
+  top: -49px;
+  margin-left: calc((100% - 117px) / 2);
+  width: 117px;
+  height: 49px;
+  background-color: var(--third-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(100% 100%, 0% 100%, 0.00% 99.67%, 2.00% 99.30%, 4.00% 98.20%, 6.00% 96.39%, 8.00% 93.89%, 10.00% 90.75%, 12.00% 87.02%, 14.00% 82.75%, 16.00% 78.01%, 18.00% 72.87%, 20.00% 67.42%, 22.00% 61.74%, 24.00% 55.93%, 26.00% 50.07%, 28.00% 44.26%, 30.00% 38.58%, 32.00% 33.13%, 34.00% 27.99%, 36.00% 23.25%, 38.00% 18.98%, 40.00% 15.25%, 42.00% 12.11%, 44.00% 9.61%, 46.00% 7.80%, 48.00% 6.70%, 50.00% 6.33%, 52.00% 6.70%, 54.00% 7.80%, 56.00% 9.61%, 58.00% 12.11%, 60.00% 15.25%, 62.00% 18.98%, 64.00% 23.25%, 66.00% 27.99%, 68.00% 33.13%, 70.00% 38.58%, 72.00% 44.26%, 74.00% 50.07%, 76.00% 55.93%, 78.00% 61.74%, 80.00% 67.42%, 82.00% 72.87%, 84.00% 78.01%, 86.00% 82.75%, 88.00% 87.02%, 90.00% 90.75%, 92.00% 93.89%, 94.00% 96.39%, 96.00% 98.20%, 98.00% 99.30%, 100.00% 99.67%);
+}
+.section_historia .icon-arrow span {
+  background-image: url('./assets/icons/Arrow-down.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
 
 .section_historia .historia__description {
   text-align: center;
