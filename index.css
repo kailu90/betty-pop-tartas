@@ -608,7 +608,7 @@ header div a img {
     height: 20px;
   }
 
-  /*****************************Sección Hero*****************/
+  /*****************************Inicio Main*****************/
 
   .main h3 {
     font-size: 6rem; 
@@ -629,6 +629,44 @@ header div a img {
     background-size: 100vw;
   }
   
+  /*****************************Sección Historia*****************/
+  .main .section_historia {
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 100px;
+  }
+  .main .section_historia .historia__description {
+    width: 30%;
+  }
+  .main .section_historia img {
+    width: 350px;
+    height: 400px;
+  }
+
+ /*****************************Sección Prodcutos*****************/
+  
+  .section_productos .productos__contenido {
+    display: flex;
+    padding: 50px 0;
+    justify-content: center;
+  }
+
+  .section_productos .productos__contenido .main__productos {
+    align-self: center;
+    width: 50%;
+    max-width: 500px;
+  }
+
+  .section_productos .productos__contenido .productos__description {
+    width: 30%;
+    margin-bottom: 0;
+    align-self: center;
+  }
+
+/*****************************Sección Footer*****************/
+  
+
   .footer {
     background-image: url("./images/background_footer_desktop.jpg");
     background-size: 100vw;
