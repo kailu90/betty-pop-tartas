@@ -167,7 +167,7 @@ a {
   position: absolute;
   width: 100%;
   height: 140px;
-  padding: 5px 20px;
+  padding: 5px 24px;
   background-color: transparent;
 }
 
@@ -177,27 +177,21 @@ a {
   height: 100px;
 }
 
-header div a img {
-  width: 20px;
-  height: 20px;
-}
-
 .header__nav {
   display: none;
 }
 
 .header__redes {
+  height: max-content;
   display: none;
+  justify-content: space-between;
 }
 
-.header .header__cart {
-  display: flex;
-  justify-self: center;
- }
-
-.header .header__cart img {
-  width: 20px;
-  height: 20px;
+.header .header__redes img {
+  width: 36px;
+  height: 36px;
+  padding: 4px;
+  margin-right: 8px;
 }
 
 /*****************************Inicio de main******************/
@@ -314,14 +308,16 @@ header div a img {
   margin: 8px auto 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 4px;
   width: 80px;
   height: 24px;
+  font-size: 12px;
   border-radius: 5px;
+  letter-spacing: 3px;
+  font-weight: 300;
   background-color: var(--third-color);
   color: var(--fourth-color);
-  font-weight: 300;
-  font-size: 12px;
   opacity: 0;
   transform: translateY(-26px);
   transition: opacity, transform 2s;
@@ -496,7 +492,7 @@ header div a img {
   justify-content: space-between;
   position: fixed;
   top: 50%;
-  right: 60px;
+  right: 40px;
   padding: 0 20px;
 }
 
@@ -581,6 +577,14 @@ header div a img {
 /*****************************Inicio de Vista Desktop*****************/
 
 @media (min-width: 900px) {
+  .nav-molibe {
+    display: none;
+  }
+
+  .burger-menu-container {
+    display: none;
+  }
+
   .header {
     display: flex;
     align-items: center;
@@ -590,12 +594,15 @@ header div a img {
     width: 100%;
     font-weight: 400;
     position: fixed;
-    background-color: transparent;
+    background-color: #ffffff;
+    z-index: 1;
   }
 
   .header__nav {
+    display: flex;
     width: 100%;
     height: auto;
+    justify-content: center;
     border: none;
   }
 
@@ -624,9 +631,8 @@ header div a img {
     padding: 0 10px;
   }
 
-  .carrito_compras {
-    width: 20px;
-    height: 20px;
+  .header .header__redes {
+    display: flex;
   }
 
   /*****************************Inicio Main*****************/
@@ -645,9 +651,28 @@ header div a img {
     margin-top: 30px;   
   }
 
+    /***************************** Hero *****************/
+
   .main .section-hero {
-    background-image: url("./images/fondo_hero_desktop.jpg");
-    background-size: 100vw;
+    background-image: url("./images/fondo_hero_desktop.jpg"); /*las iniciales estaban en mayuscula pero en la carpeta images están en minúsculas xd.*/
+    background-size: cover;/* queda mejor cover que 100vw */
+  }
+
+  .main .section-hero .title-animation {
+    font-size: 85px;
+  }
+
+  .main .section-hero .subtitle-animation {
+    font-size: 37px;
+  }
+
+  .main .section-hero .second-subtitle-animation {
+    font-size: 24px;
+  }
+
+  .main .section-hero .titulo-hero-container .hero-btn--animation {
+    width: 103px;
+    height: 30px;
   }
   
   /*****************************Sección Historia*****************/
@@ -657,12 +682,21 @@ header div a img {
     align-content: center;
     gap: 100px;
   }
+
+  .section_historia .icon-arrow {
+    margin-left: 0;
+  }
+
   .main .section_historia .historia__description {
     width: 30%;
   }
   .main .section_historia img {
     width: 350px;
     height: 400px;
+  }
+
+  .bullets-container {
+    display: flex;
   }
 
  /*****************************Sección Prodcutos*****************/

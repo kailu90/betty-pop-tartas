@@ -5,14 +5,14 @@ const line3 = document.querySelector('.line:nth-child(3)');
 const header = document.getElementById('nav');
 const navMobileContainer = document.getElementById('navMobile');
 
-window.onload = function () {
-    const heroTitle = document.getElementById('heroTitle');
+const heroTitle = document.getElementById('heroTitle');
     const heroSubtitle = document.getElementById('heroSubtitle');
     const heroSecondSubtitle = document.getElementById('heroSecondSubtitle');
     const heroLine1 = document.getElementById('herolineLeft');
     const heroLine2 = document.getElementById('herolineRight');
     const heroBtn = document.getElementById('heroBtn');
 
+window.onload = function () {
     heroTitle.classList.add('title-animation');
     heroSubtitle.classList.add('subtitle-animation');
     
@@ -40,9 +40,33 @@ burgerIcon.addEventListener('click', () => {
 // })
 
 
-
+let prevScrollPos = window.pageYOffset;
 
 window.addEventListener('scroll', function() {
+    let scrollPosition = window.pageYOffset;
+    
+    if (scrollPosition > prevScrollPos) {
+        let opacity = 1 - (scrollPosition / (window.innerHeight));
+        if (opacity < 0) {
+            opacity = 0;
+        }
+        heroTitle.style.opacity = opacity.toString();
+        heroSubtitle.style.opacity = opacity.toString();
+        heroSecondSubtitle.style.opacity = opacity.toString();
+        heroLine1.style.opacity = opacity.toString();
+        heroLine2.style.opacity = opacity.toString();
+        heroBtn.style.opacity = opacity.toString();
+    } else {
+        let opacity = 1 - (scrollPosition / (window.innerHeight));
+        heroTitle.style.opacity = opacity.toString();
+        heroSubtitle.style.opacity = opacity.toString();
+        heroSecondSubtitle.style.opacity = opacity.toString();
+        heroLine1.style.opacity = opacity.toString();
+        heroLine2.style.opacity = opacity.toString();
+        heroBtn.style.opacity = opacity.toString();
+    }
+
+    prevScrollPos = scrollPosition;
     // const burgerLine1 = document.getElementById('burgerLine1');
     // const burgerLine2 = document.getElementById('burgerLine2');
     // const burgerLine3 = document.getElementById('burgerLine3');
