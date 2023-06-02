@@ -341,7 +341,9 @@ a {
   height: 1100px;
   background-color: var(--third-color);
 }
+
 /***************************** arrow down ******************/
+
 .section_historia .icon-arrow {
   position: absolute;
   top: -49px;
@@ -354,6 +356,7 @@ a {
   align-items: center;
   clip-path: polygon(100% 100%, 0% 100%, 0.00% 99.67%, 2.00% 99.30%, 4.00% 98.20%, 6.00% 96.39%, 8.00% 93.89%, 10.00% 90.75%, 12.00% 87.02%, 14.00% 82.75%, 16.00% 78.01%, 18.00% 72.87%, 20.00% 67.42%, 22.00% 61.74%, 24.00% 55.93%, 26.00% 50.07%, 28.00% 44.26%, 30.00% 38.58%, 32.00% 33.13%, 34.00% 27.99%, 36.00% 23.25%, 38.00% 18.98%, 40.00% 15.25%, 42.00% 12.11%, 44.00% 9.61%, 46.00% 7.80%, 48.00% 6.70%, 50.00% 6.33%, 52.00% 6.70%, 54.00% 7.80%, 56.00% 9.61%, 58.00% 12.11%, 60.00% 15.25%, 62.00% 18.98%, 64.00% 23.25%, 66.00% 27.99%, 68.00% 33.13%, 70.00% 38.58%, 72.00% 44.26%, 74.00% 50.07%, 76.00% 55.93%, 78.00% 61.74%, 80.00% 67.42%, 82.00% 72.87%, 84.00% 78.01%, 86.00% 82.75%, 88.00% 87.02%, 90.00% 90.75%, 92.00% 93.89%, 94.00% 96.39%, 96.00% 98.20%, 98.00% 99.30%, 100.00% 99.67%);
 }
+
 .section_historia .icon-arrow span {
   background-image: url('./assets/icons/Arrow-down.png');
   background-repeat: no-repeat;
@@ -396,33 +399,38 @@ a {
   height: max-content;
 }
 
-.productos__tortas_container  .main__title {
+.main__title {
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 200px; 
+  height: 250px; 
 }
 
-.productos__background_container {
-  width: 100%;
-  height: 100%;
-}
-
-.section_productos .main__title h3 {
+.main__title h3 {
   color: var(--third-color);
   position: absolute;
 }
 
-.main__title picture {
+.productos__tortas_container .productos__background_container {
+  position: relative;
   width: 100%;
   height: 250px;
-}  
+  text-align: initial;
+  overflow-y: hidden;
+}
 
-.main__title picture img {
+.productos__tortas_container .main__title picture span {
+  display: inline-block;
+  position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  background-image: url("./images/torta-chocolate-prueba_desktop.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-size: 100% 700px;
 }
 
 .productos__cupcakes_container{
@@ -431,27 +439,32 @@ a {
   margin-bottom: 100px;
 }
 
-.productos__cupcakes_container .main__title {
-  display: flex;
+.productos__cupcakes_container .productos__background_container {
   position: relative;
-  align-items: center;
-  justify-content: center;
   width: 100%;
-  height: 200px;   
+  height: 250px;
+  text-align: initial;
+  overflow-y: hidden;
 }
 
-.main .main__description_parrrafo {
-  color: var(--text-color);
-  font-size: var(--font-small);
-  padding: 0 20px;
+.productos__cupcakes_container .main__title picture span {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./images/cupcakes-desktop.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-size: 100% 700px;
 }
 
-.section_productos .main__productos  {
+.main__productos  {
   margin: 60px 0;
   height: max-content;
 }
 
-.section_productos .main__productos img {
+.main__productos img {
   border-radius: 10px;
   width: 180px;
   height: 160px;
@@ -459,16 +472,18 @@ a {
   background-color: var(--fourth-color);
 }
 
-.productos__tortas_container .productos__description {
+.main__description_parrrafo {
+  color: var(--text-color);
+  font-size: var(--font-small);
+  padding: 0 20px;
+}
+
+.productos__description {
   margin-bottom: 100px;
 }
 
-.productos__tortas_container .productos__description p {
+.productos__description p {
   margin-top: 30px;
-}
-
-.main__title h3 {
-  color: var(--third-color);
 }
 
 /******************************Bullets*****************************/
@@ -693,21 +708,23 @@ a {
 
  /*****************************Sección Productos*****************/
   
+  .main__title {
+    height: 500px;
+  }
+
+  .section_productos .productos__background_container {
+    height: 400px;
+  }
+
  .productos__contenido {
     display: flex;
     padding: 50px 0;
     justify-content: center;
   }
-
-  .section_productos .main__title {
-    height: max-content;
+  
+  .productos__cupcakes_container .productos__contenido {
+    flex-direction: row-reverse;
   }
-
-  .main__title picture {
-    width: 100%;
-    height: 500px;
-    background-position: cover;
-  }  
 
   .productos__cupcakes_container {
     margin-bottom: 0;
@@ -733,12 +750,3 @@ a {
   }
 
 }
-
-/*@media (min-width: 1280px) {
-
-  .main__title picture {
-    background-position: top center;
-    background-repeat: no-repeat;
-  } 
-
-  }
