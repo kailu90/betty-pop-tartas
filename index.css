@@ -489,7 +489,7 @@ a {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid var(--third-color);
   background-color: transparent;
 }
 
@@ -502,7 +502,6 @@ a {
   text-align: center;
   color: var(--third-color);
   font-size: var(--font-small);
-  background-color: transparent;
   background-image: url("./images/background_footer.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -542,6 +541,8 @@ a {
 .footer a:nth-child(3):hover {
   color: var(--fourth-color);
   border: 1px solid var(--fourth-color);
+  background-color: var(--third-color);
+  font-weight: 500;
 }
 
 .footer p:nth-child(4) {
@@ -583,7 +584,7 @@ a {
     width: 100%;
     font-weight: 400;
     position: fixed;
-    background-color: #ffffff;
+    background-color: var(--third-color);
     z-index: 1;
   }
 
@@ -670,6 +671,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 100px;
+    height: 800px;
   }
 
   .section_historia .icon-arrow {
@@ -724,11 +726,18 @@ a {
 
 /*****************************Sección Footer*****************/
   
-
   .footer {
     background-image: url("./images/background_footer_desktop.jpg");
     background-size: 100vw;
   }
 
-
 }
+
+@media (min-width: 1280px) {
+
+  .main__title picture {
+    background-position: top center;
+    background-repeat: no-repeat;
+  }  
+
+  }
