@@ -430,7 +430,7 @@ a {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center bottom;
-  background-size: 100% 700px;
+  background-size: 150% 630px;
 }
 
 .productos__cupcakes_container{
@@ -456,7 +456,7 @@ a {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center bottom;
-  background-size: 100% 700px;
+  background-size: 150% 630px;
 }
 
 .main__productos  {
@@ -716,6 +716,10 @@ a {
     height: 400px;
   }
 
+  .productos__tortas_container .main__title picture span {
+    background-size: 100% 700px;
+  }
+
  .productos__contenido {
     display: flex;
     padding: 50px 0;
@@ -729,6 +733,11 @@ a {
   .productos__cupcakes_container {
     margin-bottom: 0;
   }
+
+  .productos__cupcakes_container .main__title picture span {
+    background-size: 100% 700px;
+  }
+
 
   .main__productos {
     align-self: center;
