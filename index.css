@@ -200,14 +200,14 @@ a {
   background-color:var(--third-color);
 }
 
-.main h3 {
+.main .text__title {
   font-size: var(--font-large);
   color: var(--fourth-color);
   font-weight: 900;
   line-height: 4rem;
 }
 
-.main h3 span {
+.main .text__title span {
   line-height: 6rem;
   font-size: var(--font-XXlarge);
   color: var(--secondary-color);
@@ -399,7 +399,7 @@ a {
   height: max-content;
 }
 
-.main__title {
+.productos__title {
   display: flex;
   position: relative;
   align-items: center;
@@ -408,12 +408,12 @@ a {
   height: 250px; 
 }
 
-.main__title h3 {
+.productos__title .text__title {
   color: var(--third-color);
   position: absolute;
 }
 
-.productos__tortas_container .productos__background_container {
+.productos__tortas_container .title__background_container {
   position: relative;
   width: 100%;
   height: 250px;
@@ -421,7 +421,7 @@ a {
   overflow-y: hidden;
 }
 
-.productos__tortas_container .main__title picture span {
+.productos__tortas_container .productos__title picture span {
   display: inline-block;
   position: absolute;
   width: 100%;
@@ -430,16 +430,16 @@ a {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center bottom;
-  background-size: 150% 630px;
+  background-size: 150% 100vh;
 }
 
-.productos__cupcakes_container{
+.productos__cupcakes_container {
   width: 100%;
   height: max-content;
   margin-bottom: 100px;
 }
 
-.productos__cupcakes_container .productos__background_container {
+.productos__cupcakes_container .title__background_container  {
   position: relative;
   width: 100%;
   height: 250px;
@@ -447,7 +447,7 @@ a {
   overflow-y: hidden;
 }
 
-.productos__cupcakes_container .main__title picture span {
+.productos__cupcakes_container .productos__title picture span {
   display: inline-block;
   position: absolute;
   width: 100%;
@@ -456,15 +456,15 @@ a {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center bottom;
-  background-size: 150% 630px;
+  background-size: 150% 100vh;
 }
 
-.main__productos  {
+.main__productos_images {
   margin: 60px 0;
   height: max-content;
 }
 
-.main__productos img {
+.main__productos_images img {
   border-radius: 10px;
   width: 180px;
   height: 160px;
@@ -476,14 +476,11 @@ a {
   color: var(--text-color);
   font-size: var(--font-small);
   padding: 0 20px;
+  margin-top: 30px;
 }
 
 .productos__description {
   margin-bottom: 100px;
-}
-
-.productos__description p {
-  margin-top: 30px;
 }
 
 /******************************Bullets*****************************/
@@ -641,13 +638,13 @@ a {
 
   /*****************************Inicio Main*****************/
 
-  .main h3 {
+  .main .text__title {
     font-size: 6rem; 
     margin-top: 50px;
     line-height: 50px;  
   }
 
-  .main h3 span {
+  .main .text__title span {
     font-size: 8rem;   
   }
 
@@ -708,19 +705,19 @@ a {
 
  /*****************************Sección Productos*****************/
   
-  .main__title {
+  .productos__title {
     height: 500px;
   }
 
-  .section_productos .productos__background_container {
+  .section_productos .title__background_container {
     height: 400px;
   }
 
-  .productos__tortas_container .main__title picture span {
+  .productos__tortas_container .productos__title picture span {
     background-size: 100% 700px;
   }
 
- .productos__contenido {
+ .productos__contenido_container {
     display: flex;
     padding: 50px 0;
     justify-content: center;
@@ -734,12 +731,11 @@ a {
     margin-bottom: 0;
   }
 
-  .productos__cupcakes_container .main__title picture span {
+  .productos__cupcakes_container .productos__title picture span {
     background-size: 100% 700px;
   }
 
-
-  .main__productos {
+  .main__productos_images {
     align-self: center;
     width: 50%;
     max-width: 500px;
