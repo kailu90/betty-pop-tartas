@@ -229,78 +229,108 @@ a {
 }
 
 .main .titulo-hero-container {
-  width: auto;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .main .section-hero h1 {
-  font-size: 50px;
-  line-height: 60px;
-  height: max-content;
-  font-family: 'Pacifico', cursive;
-  font-weight: 400;
-  color: var(--secondary-color);
+  font-size: 37px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 30px;
   opacity: 0;
-  transform: translateY(30px);
+  animation: fade-in-1 1s ease-in-out forwards;
 }
 
-.main .section-hero .title-animation {
-  opacity: 100%;
-  transform: translateY(0);
-  transition: opacity, transform 1s;
+@keyframes fade-in-1 {
+  0% {
+    opacity: 0;
+    letter-spacing: 7px;
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: normal;
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 .main .section-hero h2 {
-  font-size: 37px;
+  font-size: 50px;
+  line-height: 60px;
   height: max-content;
-  font-family: 'Poppins', sans-serif;
-  transform: translateY(-144px);
+  font-weight: 400;
+  font-family: 'Pacifico', cursive;
+  color: var(--secondary-color);
   opacity: 0;
+  animation: fade-in-2 1s ease-in-out forwards;
+  animation-delay: 1s;
 }
 
-.main .section-hero .subtitle-animation {
-  opacity: 100%;
-  font-size: 35px;
-  transform: translateY(0);
-  transition: opacity, transform, font-size 0.2s;
+@keyframes fade-in-2 {
+  0% {
+    opacity: 0;
+    transform: translateY(144px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.bottom-title {
+  bottom: 16px;
+  width: 100%;
 }
 
 .hero-lines-container {
-  position: relative;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
 .hero-line {
-  display: inline-block;
+  width: 0;
   height: 2px;
-  width: 1px;
+  margin: 16px;
   background-color: var(--third-color);
+  animation: line-animation 1s ease-in-out forwards;
+  animation-delay: 1s;
 }
 
-.hero-lines-container .line-left-on-load {
-  transform: scaleX(150);
-  transform-origin: right;
-  transition: transform 2s;
+@keyframes line-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
-.hero-lines-container .line-right-on-load {
-  transform: scaleX(150);
-  transform-origin: left;
-  transition: transform 2s;
-}
 
 .main .section-hero .hero-second-subtitle {
   font-size: var(--font-medium);
   font-family: 'Poppins', sans-serif;
   opacity: 0;
-  transform: translateY(-26px);
-  transition: opacity, transform 2s;
+  animation: second-subtitle 1s ease-in-out forwards;
+  animation-delay: 1s;
 }
 
-.main .section-hero .titulo-hero-container .second-subtitle-animation {
-  opacity: 100%;
-  transform: translateY(0);
+@keyframes second-subtitle {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .main .section-hero .titulo-hero-container a {
@@ -318,19 +348,25 @@ a {
   background-color: var(--third-color);
   color: var(--fourth-color);
   opacity: 0;
-  transform: translateY(-26px);
-  transition: opacity, transform 2s;
+  animation: button-animation 1s ease-in-out forwards;
+  animation-delay: 1s;
 }
 
-.main .section-hero .titulo-hero-container .hero-btn--animation {
-  opacity: 100%;
-  transform: translateY(0);
+@keyframes button-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .main .section-hero .titulo-hero-container a:hover {
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
-}
+} */
 
 /******************************Sección Historia*****************************/
 
@@ -661,19 +697,23 @@ a {
     background-attachment: fixed;
   }
 
-  .main .section-hero .title-animation {
-    font-size: 85px;
+  .main .section-hero .titulo-hero-container {
+    max-width: 700px;
   }
 
-  .main .section-hero .subtitle-animation {
-    font-size: 37px;
+  .main .section-hero .titulo-hero-container h1 {
+    font-size: 60px;
   }
 
-  .main .section-hero .second-subtitle-animation {
+  .main .section-hero .titulo-hero-container h2 {
+    font-size: 80px;
+  }
+
+  .main .section-hero .titulo-hero-container .hero-second-subtitle {
     font-size: 24px;
   }
 
-  .main .section-hero .titulo-hero-container .hero-btn--animation {
+  .main .section-hero .titulo-hero-container a {
     width: 103px;
     height: 30px;
   }

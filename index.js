@@ -17,32 +17,32 @@ const targetElement = document.querySelector("#historia");
 
 let prevScrollPos = window.pageYOffset;
 
-window.addEventListener("scroll", () => {
-  let scrollPosition = window.pageYOffset;
+// window.addEventListener("scroll", () => {
+//   let scrollPosition = window.pageYOffset;
 
-  if (scrollPosition > prevScrollPos) {
-    let opacity = 1 - scrollPosition / window.innerHeight;
-    if (opacity < 0) {
-      opacity = 0;
-    }
-    heroTitle.style.opacity = opacity.toString();
-    heroSubtitle.style.opacity = opacity.toString();
-    heroSecondSubtitle.style.opacity = opacity.toString();
-    heroLine1.style.opacity = opacity.toString();
-    heroLine2.style.opacity = opacity.toString();
-    heroBtn.style.opacity = opacity.toString();
-  } else {
-    let opacity = 1 - scrollPosition / window.innerHeight;
-    heroTitle.style.opacity = opacity.toString();
-    heroSubtitle.style.opacity = opacity.toString();
-    heroSecondSubtitle.style.opacity = opacity.toString();
-    heroLine1.style.opacity = opacity.toString();
-    heroLine2.style.opacity = opacity.toString();
-    heroBtn.style.opacity = opacity.toString();
-  }
+//   if (scrollPosition > prevScrollPos) {
+//     let opacity = 1 - scrollPosition / window.innerHeight;
+//     if (opacity < 0) {
+//       opacity = 0;
+//     }
+//     heroTitle.style.opacity = opacity.toString();
+//     heroSubtitle.style.opacity = opacity.toString();
+//     heroSecondSubtitle.style.opacity = opacity.toString();
+//     heroLine1.style.opacity = opacity.toString();
+//     heroLine2.style.opacity = opacity.toString();
+//     heroBtn.style.opacity = opacity.toString();
+//   } else {
+//     let opacity = 1 - scrollPosition / window.innerHeight;
+//     heroTitle.style.opacity = opacity.toString();
+//     heroSubtitle.style.opacity = opacity.toString();
+//     heroSecondSubtitle.style.opacity = opacity.toString();
+//     heroLine1.style.opacity = opacity.toString();
+//     heroLine2.style.opacity = opacity.toString();
+//     heroBtn.style.opacity = opacity.toString();
+//   }
 
-  prevScrollPos = scrollPosition;
-});
+//   prevScrollPos = scrollPosition;
+// });
 
 const links = document.querySelectorAll('a[href^="#"]');
 
@@ -66,16 +66,6 @@ function smoothScroll(event) {
   }
 }
 
-window.onload = function () {
-  heroTitle.classList.add("title-animation");
-  heroSubtitle.classList.add("subtitle-animation");
-
-  heroLine1.classList.add("line-left-on-load");
-  heroLine2.classList.add("line-right-on-load");
-
-  heroSecondSubtitle.classList.add("second-subtitle-animation");
-  heroBtn.classList.add("hero-btn--animation");
-};
 
 const main = document.getElementById("main");
 const sectionHistoria = document.getElementById("historia");
