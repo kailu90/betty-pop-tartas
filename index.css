@@ -697,19 +697,23 @@ a {
     background-attachment: fixed;
   }
 
-  .main .section-hero .title-animation {
-    font-size: 85px;
+  .main .section-hero .titulo-hero-container {
+    max-width: 700px;
   }
 
-  .main .section-hero .subtitle-animation {
-    font-size: 37px;
+  .main .section-hero .titulo-hero-container h1 {
+    font-size: 60px;
   }
 
-  .main .section-hero .second-subtitle-animation {
+  .main .section-hero .titulo-hero-container h2 {
+    font-size: 80px;
+  }
+
+  .main .section-hero .titulo-hero-container .hero-second-subtitle {
     font-size: 24px;
   }
 
-  .main .section-hero .titulo-hero-container .hero-btn--animation {
+  .main .section-hero .titulo-hero-container a {
     width: 103px;
     height: 30px;
   }
