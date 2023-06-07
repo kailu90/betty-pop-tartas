@@ -38,6 +38,10 @@ a {
   border-bottom: 1px solid var(--primary-color);
 }
 
+.main_contactanos .contactanos__contenedor {
+  border-bottom: 1px solid transparent;
+}
+
 /******************************************Sección Title******************/
 .main_contactanos {
   background-color: var(--third-color);
@@ -179,8 +183,17 @@ a {
   color: var(--third-color);
 }
 
-
 @media (min-width: 900px) {
+
+  .main_contactanos .contactanos__title h2 {
+  font-size: 16rem;
+  }
+
+  .main_contactanos .contactanos__title h2 span {
+    font-size: 6rem;
+    left: -18px;
+    top: 100px;
+    }
 
  .main_contactanos .contactanos__contenedor {
   display: flex;
@@ -199,7 +212,5 @@ a {
  .formulario__container button {
   margin-bottom: 70px;
  }
-
- 
 
 }
