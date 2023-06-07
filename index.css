@@ -113,10 +113,11 @@ a {
 }
 
 .burger-menu .line {
-  height: 2px;
-  width: 30px;
-  background-color: var(--third-color);
   position: absolute;
+  height: 3px;
+  width: 30px;
+  border: 1px solid black;
+  background-color: var(--third-color);
 }
 
 .burger-menu .line:nth-child(1) {
@@ -138,7 +139,6 @@ a {
 }
 
 #burgerIcon.active .line:nth-child(1) {
-  background-color: var(--secondary-color);
   transform: translateY(4px) rotate(45deg);
   transition: transform 0.5s;
 }
@@ -148,7 +148,6 @@ a {
 }
 
 #burgerIcon.active .line:nth-child(3) {
-  background-color: var(--secondary-color);
   transform: translateY(-10px) rotate(-45deg);
   transition: transform 0.5s;
 }
