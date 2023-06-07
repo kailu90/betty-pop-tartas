@@ -178,3 +178,28 @@ a {
   background-color: var(--text-color);
   color: var(--third-color);
 }
+
+
+@media (min-width: 900px) {
+
+ .main_contactanos .contactanos__contenedor {
+  display: flex;
+ }
+
+ .main_contactanos .contactanos__contenedor_izquierda {
+  width: 50vw;
+  margin: 0 40px;
+ }
+
+ .main_contactanos .contactanos__contenedor_derecha {
+  width: 50vw;
+  margin: 0 40px;
+ }
+
+ .formulario__container button {
+  margin-bottom: 70px;
+ }
+
+ 
+
+}
