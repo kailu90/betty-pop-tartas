@@ -373,8 +373,9 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 1100px;
+  height: max-content;
   background-color: var(--third-color);
+  justify-content: center;
 }
 
 /***************************** arrow down ******************/
@@ -414,8 +415,10 @@ a {
 
 .section_historia img {
   width: 100vw;
-  max-width: 500px;
-  align-self: center;
+  max-width: 320px;
+  justify-self: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
 }
 
 /******************************Sección Productos*****************************/
@@ -719,11 +722,14 @@ a {
   
   /*****************************Sección Historia*****************/
   .section_historia {
-    flex-direction: row;
+    display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
     height: 800px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   .section_historia .icon-arrow {
@@ -731,11 +737,14 @@ a {
   }
 
   .historia__description {
-    width: 30%;
+    width: 50%;
+    margin: 0 auto;    
   }
+
   .section_historia img {
     width: 350px;
     height: 400px;
+    margin: 0 auto;
   }
 
   .bullets-container {
