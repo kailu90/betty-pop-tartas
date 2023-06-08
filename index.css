@@ -723,10 +723,10 @@ a {
   /*****************************Sección Historia*****************/
   .section-history {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 100px;
-    height: max-content;
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
