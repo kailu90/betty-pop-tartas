@@ -542,6 +542,68 @@ a {
   background-color: transparent;
 }
 
+.bullets-container .circle {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--third-color);
+}
+
+@keyframes bullet-animation-1 {
+  0% {
+    transform: scaleX(0.5);
+  }
+  100% {
+    transform: translateY(28px) scale(1);
+  }
+}
+
+@keyframes bullet-animation-2 {
+  0% {
+    transform: translateY(28px) scaleX(0.5);
+  }
+  100% {
+    transform: translateY(56px) scale(1);
+  }
+}
+
+@keyframes bullet-animation-3 {
+  0% {
+    transform: scaleX(0.5);
+  }
+  100% {
+    transform: translateY(56px) scale(1);
+  }
+}
+
+@keyframes bullet-animation-4 {
+  0% {
+    transform: translateY(56px) scaleX(0.5);
+  }
+  100% {
+    transform: translateY(28px) scale(1);
+  }
+}
+
+@keyframes bullet-animation-5 {
+  0% {
+    transform: translateY(28px) scale(0.5);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes bullet-animation-6 {
+  0% {
+    transform: translateY(56px) scale(0.5);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
 /*****************************Footer******************/
 
 .footer {
