@@ -873,3 +873,191 @@ a {
     background-size: 100vw;
   }
 }
+
+
+
+/*******************************************************************Inicio Página Contactanos************************************/
+
+.main_contactanos .section {
+  width: 100%;  
+  justify-content: center;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.main_contactanos .contactanos__contenedor {
+  border-bottom: 1px solid transparent;
+}
+
+/******************************************Sección Title******************/
+.main_contactanos {
+  background-color: var(--third-color);
+  font-size: var(--font-medium);
+  height: max-content;
+}
+
+.main_contactanos h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: var(--font-medium);
+  color: var(--text-color);
+}
+
+.main_contactanos .contactanos__title {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("./images/fondo_hero_contactanos.jpg");
+  background-position: center left;
+  background-size: cover;
+  margin: 0 auto 40px auto;
+}
+
+.main_contactanos .contactanos__title h2 {
+  position: relative;
+  font-family: 'Pacifico', cursive;
+  font-size: 8rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+.main_contactanos .contactanos__title h2 span {
+  position: absolute;
+  width: max-content;
+  font-size: 4rem;
+  font-weight: 700;
+  left: -30px;
+  top: 30px;
+  color: var(--third-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+/******************************************Sección Description******************/
+
+.main_contactanos .contactanos__description {
+  margin: 20px auto;
+  width: 90%;
+}
+
+.main_contactanos .contactanos__description .description__parrafo {
+  margin: 40px auto;
+}
+
+/******************************************Sección Redes******************/
+
+.main_contactanos .contactanos__redes {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 90%;
+  height: 300px;
+  justify-content: space-between;
+}
+
+.contactanos__redes .redes__container img {
+  width: 40px;
+  height: 40px;
+  margin: 0 20px 20px 0;
+}
+
+/******************************************Sección Formulario******************/
+
+.main_contactanos .contactanos__formulario {
+  width: 90%;
+  margin-top: 40px;
+  background-color: var(--third-color);
+}
+
+.formulario__container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: left;
+}
+
+.formulario__container h3 {
+  margin: 20px 0;
+}
+
+.formulario__container .label {
+  height: 40px;
+  align-content: center;
+}
+
+.formulario__container input{
+  width: 100%;
+  background-color: var(--third-color);
+}
+
+.formulario__container .input_radio {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  background-color: white;
+}
+
+.formulario__container .input_datos {
+  margin: 10px 0;
+  width: 100%;
+  height: 30px;
+  border-radius: 6px;
+  padding: 8px;
+  background-color: white;
+}
+
+.formulario__container input:nth-child(9) {
+  width: 100%;
+  height: 200px;
+  margin: 20px auto;
+  border-radius: 6px;
+  background-color: white;
+}
+
+.formulario__container button {
+  width: 80px;
+  height: 30px;  margin-bottom: 40px;
+  align-content: center;
+  justify-content: center;
+  font-weight: 700;
+  background-color: var(--third-color);
+  border-radius: 8px;
+}
+
+.formulario__container button:hover {
+  background-color: var(--text-color);
+  color: var(--third-color);
+}
+
+@media (min-width: 900px) {
+
+.main_contactanos .contactanos__title h2 {
+  font-size: 16rem;
+}
+
+.main_contactanos .contactanos__title h2 span {
+  font-size: 6rem;
+  left: -18px;
+  top: 100px;
+}
+
+.main_contactanos .contactanos__contenedor {
+  display: flex;
+ }
+
+.main_contactanos .contactanos__contenedor_izquierda {
+  width: 50vw;
+  margin: 0 40px;
+}
+
+.main_contactanos .contactanos__contenedor_derecha {
+  width: 50vw;
+  margin: 0 40px;
+}
+
+.formulario__container button {
+  margin-bottom: 70px;
+}
+
+}
