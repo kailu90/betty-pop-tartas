@@ -366,14 +366,14 @@ a {
 .main .section-hero .titulo-hero-container a:hover {
   color: var(--secondary-color);
   border: 1px solid var(--secondary-color);
-} */
+}
 
 /******************************Sección Historia*****************************/
 
 .section_historia {
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: max-content;
   background-color: var(--third-color);
   justify-content: center;
