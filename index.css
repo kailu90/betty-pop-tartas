@@ -372,10 +372,11 @@ a {
 .section-history {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: max-content;
   background-color: var(--third-color);
   justify-content: center;
+  margin: 100px auto;
 }
 
 /***************************** arrow down ******************/
@@ -406,6 +407,7 @@ a {
 .section-history .historia__description {
   text-align: center;
   margin-top: 50px;
+  width: 100%;
 }
 
 .section-history .historia__description p {
@@ -415,7 +417,7 @@ a {
 
 .section-history img {
   width: 100vw;
-  max-width: 320px;
+  max-width: 280px;
   justify-self: center;
   margin: 0 auto;
   margin-bottom: 60px;
@@ -467,8 +469,8 @@ a {
   background-image: url("./images/torta-chocolate-prueba_desktop.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center bottom;
-  background-size: 150% 100vh;
+  background-position: center;
+  background-size: auto 100vh;
 }
 
 .productos__cupcakes_container {
@@ -493,8 +495,8 @@ a {
   background-image: url("./images/cupcakes-desktop.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: center bottom;
-  background-size: 150% 100vh;
+  background-position: center;
+  background-size: auto 100vh;
 }
 
 .main__productos_images {
@@ -790,6 +792,8 @@ a {
     align-items: center;
     gap: 100px;
     width: 100%;
+    height: 100vh;
+    max-height: 1000px;
     max-width: 800px;
     margin: 0 auto;
   }
@@ -823,14 +827,19 @@ a {
     height: 400px;
   }
 
+  .productos__tortas_container .productos__contenido_container {
+    height: 100vh;
+  }
+
   .productos__tortas_container .productos__title picture span {
-    background-size: 100% 700px;
+    background-size: 100vw 100vh;
   }
 
  .productos__contenido_container {
     display: flex;
     padding: 50px 0;
     justify-content: center;
+    height: 100vh;
   }
   
   .productos__cupcakes_container .productos__contenido {
@@ -842,7 +851,7 @@ a {
   }
 
   .productos__cupcakes_container .productos__title picture span {
-    background-size: 100% 700px;
+    background-size: 100vw 100vh;
   }
 
   .main__productos_images {
