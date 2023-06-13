@@ -80,10 +80,12 @@ const backgroundColor = getComputedStyle(historySection).backgroundColor;
 const productsSection = document.getElementById('productos');
 const footerContainer = document.getElementById('footer');
 
+const bulletsContainer = document.getElementById('bulletsContainer');
 const circle = document.getElementById('circle');
 const firstBullet = document.getElementById('firstBullet');
 const secondBullet = document.getElementById('secondBullet');
 const thirdBullet = document.getElementById('thirdBullet');
+const TortaImagenContainer = document.getElementById('TortaImagenContainer');
 
 //función para darle animación a los bullets
 function bulletsAnimation(windowPosition) {
@@ -91,27 +93,29 @@ function bulletsAnimation(windowPosition) {
   const historySectionRect = historySection.getBoundingClientRect();
   const productsSectionRect = productsSection.getBoundingClientRect();
   const footerSectionRect = footerContainer.getBoundingClientRect();
+  const TortaImagenContainerRect = TortaImagenContainer.getBoundingClientRect();
+  const bulletsContainerRect = bulletsContainer.getBoundingClientRect();
 
-
-  if (windowPosition >= heroSectionRect.bottom && windowPosition < historySectionRect.bottom) {
+  if (windowPosition >= heroSectionRect.bottom && windowPosition > historySectionRect.top && windowPosition <= historySectionRect.bottom) {
     firstBullet.style.border = '2px solid var(--fourth-color)';
     secondBullet.style.border = '2px solid var(--fourth-color)';
     thirdBullet.style.border = '2px solid var(--fourth-color)';
-  } else if (windowPosition >= historySectionRect.bottom && windowPosition < productsSectionRect.bottom) {
+    circle.style.animation = 'bullet-animation-1 .5s ease-in-out forwards';
+  } else if (productsSectionRect.top === bulletsContainerRect.top) {
     firstBullet.style.border = '2px solid var(--third-color)';
     secondBullet.style.border = '2px solid var(--third-color)';
     thirdBullet.style.border = '2px solid var(--third-color)';
-  } else if (windowPosition >= productsSectionRect.top) {
-    firstBullet.style.border = '2px solid var(--fourth-color)';
-    secondBullet.style.border = '2px solid var(--fourth-color)';
-    thirdBullet.style.border = '2px solid var(--fourth-color)';
+   } else if (windowPosition < heroSectionRect.bottom){
+    firstBullet.style.border = '2px solid var(--third-color)';
+    secondBullet.style.border = '2px solid var(--third-color)';
+    thirdBullet.style.border = '2px solid var(--third-color)';
+    circle.style.animation = 'bullet-animation-5 .5s ease-in-out forwards';
   } else {
     firstBullet.style.border = '2px solid var(--third-color)';
     secondBullet.style.border = '2px solid var(--third-color)';
     thirdBullet.style.border = '2px solid var(--third-color)';
   }
 }
-
 
 firstBullet.addEventListener('click', bulletsTransition);
 secondBullet.addEventListener('click', bulletsTransition);
@@ -124,7 +128,11 @@ function bulletsTransition() {
   const circlePosition = circle.getBoundingClientRect();
 
   if (bulletId === 'secondBullet' && circlePosition.top === 497.5) {
-    circle.style.animation = 'bullet-animation-1 .5s ease-in-out forwards';    
+    if (circle.style.animation === 'bullet-animation-1 .5s ease-in-out forwards') {
+      console.log('ya tiene la propiedad animación');
+    } else {
+      circle.style.animation = 'bullet-animation-1 .5s ease-in-out forwards';
+    }
   } else if (bulletId === 'secondBullet' && circlePosition.top === 553.5) {
     circle.style.animation = 'bullet-animation-4 .5s ease-in-out forwards';    
   } else if (bulletId === 'thirdBullet' && circlePosition.top === 525.5) {
