@@ -86,7 +86,6 @@ a {
   width: 36px;
   height: 36px;
   margin-right: 16px;
-  opacity: .5;
 }
 
 /*****************************Header******************/
@@ -395,7 +394,7 @@ a {
 }
 
 .section-history .icon-arrow span {
-  background-image: url('./assets/icons/Arrow-down.png');
+  background-image: url('https://icons.veryicon.com/png/o/internet--web/prejudice/down-arrow-5.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
