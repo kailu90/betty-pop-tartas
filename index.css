@@ -383,7 +383,7 @@ a {
 
 .section-history .icon-arrow {
   position: absolute;
-  top: -49px;
+  top: -149px;
   margin-left: calc((100% - 117px) / 2);
   width: 117px;
   height: 49px;
@@ -800,6 +800,7 @@ a {
 
   .section-history .icon-arrow {
     margin-left: 0;
+    top: -49px;
   }
 
   .historia__description {
