@@ -300,7 +300,7 @@ a {
   margin: 16px;
   background-color: var(--third-color);
   animation: line-animation 1s ease-in-out forwards;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 @keyframes line-animation {
@@ -318,7 +318,7 @@ a {
   font-family: 'Poppins', sans-serif;
   opacity: 0;
   animation: second-subtitle 1s ease-in-out forwards;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 @keyframes second-subtitle {
@@ -348,7 +348,7 @@ a {
   color: var(--fourth-color);
   opacity: 0;
   animation: button-animation 1s ease-in-out forwards;
-  animation-delay: 1s;
+  animation-delay: 2s;
 }
 
 @keyframes button-animation {
