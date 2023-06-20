@@ -81,8 +81,8 @@ a {
   width: 100%;
 }
 
-.nav__redes .icono_instagram,
-.icono_whatsapp {
+.icono-instagram,
+.icono-whatsapp {
   width: 36px;
   height: 36px;
   margin-right: 16px;
@@ -182,13 +182,6 @@ a {
   height: max-content;
   display: none;
   justify-content: space-between;
-}
-
-.header .header__redes img {
-  width: 36px;
-  height: 36px;
-  padding: 4px;
-  margin-right: 8px;
 }
 
 /*****************************Inicio de main******************/
@@ -691,7 +684,6 @@ a {
   .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     font-size: var(--font-small);
     height: 100px;
     width: 100%;
@@ -703,7 +695,8 @@ a {
 
   .header__nav {
     display: flex;
-    width: 100%;
+    margin-right: 70px;
+    width: max-content;
     height: auto;
     justify-content: center;
     border: none;
@@ -717,6 +710,7 @@ a {
   .header__logo {
     width: 80px;
     height: 80px;
+    margin-right: 70px;
     background-size: cover;
     background-position: center;
   }
@@ -731,11 +725,12 @@ a {
   }
 
   .header li a {
-    padding: 0 10px;
+    padding: 0 36px;
   }
 
   .header .header__redes {
     display: flex;
+
   }
 
   /*****************************Inicio Main*****************/
