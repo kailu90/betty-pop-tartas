@@ -387,11 +387,12 @@ a {
 }
 
 .section-history .icon-arrow span {
+  position: absolute;
+  top: 17px;
   background-image: url('https://icons.veryicon.com/png/o/internet--web/prejudice/down-arrow-5.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  display: inline-block;
   width: 30px;
   height: 30px;
 }
